@@ -1,0 +1,158 @@
+<html>
+	<head>
+	</head>
+
+
+	<body>
+   <h1>welcome to sintax.html file<h1>
+	<script>
+        /*
+
+define attributes / variables
+number
+string
+boolean
+array
+dictionary / objects
+
+	*/
+
+	// for this example we will create to integer numbers and add them
+	console.log ('numbers: ');
+	var number1 = 2;
+	var number2 = 3;
+	console.log ('2 + 3 = ',number1 + number2  );
+
+
+	//string a string is a type that represents sequence of alphanumeric characters
+	var name = 'Giovanni';
+	console.log ('my name is ', name );
+
+
+	// the boolean type represents the logic binary type true or false
+	var interrupt  = 1==2  ; //this is a false statement
+
+	console.log ('current value of interrupt status:', interrupt );
+
+
+	// an array is a series of values of different types condensed on a set, each position represented by an index that start wwit 0 for the first element
+	var ideaList = ['Cat',2,'dog','penguin', 3  ]
+        console.log (ideaList[2] );
+
+	//a dictionary is a set of  corresponding keys and values that correlate
+      var dict = []; // create an empty array
+
+	dict.push({
+    	key:   "miriam",
+    	value: "peters"
+	});
+
+
+	dict.push({
+    	key:   "john",
+    	value: "doe"
+	});
+
+console.log (dict[0].key,' ', dict[0].value );
+
+// you pull out the name of the key or value like a property in an object
+// there are no difference between the
+
+// !!!! the undefined type is assigend to a variable that was not instanced yet
+ // variable defineMe was not declared or assigend a value or a type
+console.log (defineMe = undefined); // will return undefined
+
+// the IF  and ELSE statement --- to make decicions on the behaviour of of conde
+var littleNumber = 3;
+if (littleNumber <10) {console.log ("the littleNumber variable has a small value of ", littleNumber) }
+else {console.log ("the littleNumber variable is not so little, it has a value of ", littleNumber)}
+
+// a function is an atomic and independant block of code that will receive a parameters
+// the following is a function that add up two numbers
+function addTwo (firstNumber, secondNumber )
+								{
+									return (firstNumber+secondNumber) ;
+								}
+// Let's test it...
+console.log (addTwo(2,5)) // should print seven
+
+// arrays: an array is a set of elements that can be of different types, named by an index
+
+ animalArray = []; // empty array
+ // we add to the front using push
+ animalArray.push ('dog');
+ console.log (animalArray[0] ); // the first element of the array starts at 0
+ animalArray.push ('cat');
+ console.log (animalArray);
+// we add to the beginning using shift
+animalArray.unshift ('elephant');
+console.log (animalArray);
+//add to the middle with splice.
+var removedAnimal = animalArray.splice(2,0,"Giraffe","rat");
+console.log (animalArray);
+
+
+//************** loops
+
+// "for" has a initial value, a condition
+console.log ("numbers 1 to 9 :")
+for (let i=0; i<4; i++ )
+		{
+			console.log(i);
+		}
+
+
+// for every animal in the array in the previos array -- using for in
+for (quantAnimals in animalArray)
+{
+	console.log (animalArray[quantAnimals], "is animal # ",quantAnimals);
+
+}
+
+//  using while
+let myCounter = 0;
+while (myCounter < 5)
+ 						{
+	 					console.log (myCounter);
+	 					myCounter++;
+
+ 						}
+
+// do while   -- dowhile does the loop at least once
+
+let myCounter2 = 0
+do {
+		console.log ('do while',myCounter);
+		myCounter2++;
+		}
+		while  (myCounter2 < 5) ;
+
+// for each in an array
+animalArray.forEach(function(element) {
+console.log (element);
+});
+
+
+// object lookup, note that there is one key and a value in the function below
+// note that the lookup happens without an if or switch
+
+function phoneticLookup (queryLetter) {
+														var alphaSound = {
+																				  	a:"Alpha",
+																				  	b:"Bravo",
+																						c:"Charlie",
+																					  d:"Delta"
+
+
+																				};
+																				return alphaSound[queryLetter];
+														}
+console.log(phoneticLookup("c"));
+
+
+
+
+	</script>
+
+	</body>
+</html>

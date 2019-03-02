@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+	 
+<head>
+	<title>DOM Manipulation</title>
+</head>
+
+<style>
+body
+{
+background-image: linear-gradient(to right, rgb(200, 233, 200), rgb(171, 162, 249));
+}
+
+.card {border:1px solid black;
+    margin: auto;
+	width:300px;
+	
+	     /* the shadow */
+    -moz-box-shadow:    3px 3px 5px 6px #ccc;
+    -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+    box-shadow:         3px 3px 5px 6px #ccc;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    border-radius: 5px
+
+    padding: 10px;
+  	text-align: center;
+/*
+  	text-align: center;
+	vertical-align: middle;
+
+
+	background: #222;
+	color: rgba(0,0,0,0.6);
+    text-shadow: 2px 2px 3px rgba(255,255,255,0.1);
+    font-size:20px;
+	 
+	padding: 10px;
+*/
+}	
+
+/* CSS for the fexgrid with two coluns */
+.column {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+button {
+    color: #444444;
+    background: #F3F3F3;
+    border: 1px #DADADA solid;
+    padding: 5px 10px;
+    border-radius: 2px;
+    font-weight: bold;
+    font-size: 9pt;
+    outline: none;
+}
+
+button:hover {
+    border: 1px #C6C6C6 solid;
+    box-shadow: 1px 1px 1px #EAEAEA;
+    color: #333333;
+    background: #F7F7F7;
+}
+
+button:active {
+    box-shadow: inset 1px 1px 1px #DFDFDF;   
+}
+
+
+
+</style>
+
+<body>
+
+<div class="card" id="topCard" text-align: center>
+	<h1>Basic DOM</h1>
+	<div id="content" display: inline-block>
+		<h3>this is a list of stuff</h3>
+		<ol id="shindler">
+			<li> uno </li>
+			<li> dos </li>
+		</ol>
+	</div>	
+
+	<div id="foot">
+		<button id="dspChildren">Show</button>
+		<button id="addListEle">Add</button>
+		<br>
+	</div>
+</div>
+
+
+<h1>Working with cards</h1>
+<div class="row">
+  <div class="column"> <button id="addCard">Add Card</button> </div>
+  
+
+  <div class="column"><h2>Right side</h2></div>
+</div>
+
+
+
+
+
+
+<script type="text/javascript" src="dom.js"></script>
+</body>
+</html>

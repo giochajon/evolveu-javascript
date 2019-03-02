@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style>
+.nbtn {
+	background: #99ccff;
+	border-radius: 6px;
+	} 
+.obtn {
+	background: #ffb3b3;
+	border-radius: 6px;
+	} 
+.scree {
+	background: #ffffb3;
+	border-radius: 6px;
+	} 
+
+
+</style>
+
+</head>>	
+
+<body>
+
+	<h1>Hello world from HTML</h1>
+	<br>
+	<input type="text" id="textBox"><br>
+	<br>
+	<button type="button" onclick="clickingResult(document.getElementById('textBox').value)">Click me</button>
+	 <!--<button type="button" onclick="document.getElementById('inline').innerHTML = 'Hello World from inline JavaScript'">printstuff</button>
+
+	 <button type="button" onclick="document.getElementById('textBox').value = 'meaw'">	Push me.</button>  -->
+
+
+
+	<script>
+	console.log("Hello wold from inline javascript");
+	</script>
+
+
+
+<h1>My Calculator</h1>
+
+<!-- 
+<button id="myBtn">Try it</button>
+<p id="demo"></p>
+
+-->
+
+
+
+<table bgcolor="#C0C0C0" border="0"> 
+         <tr> 
+            <td colspan="3"><input class="scree" type="text" id="result"/></td> 
+            <!-- clr() function will call clr to clear all value -->
+            <td><input class="obtn" type="button" value="  AC  " onclick="clr()"/> </td> 
+         </tr> 
+         <tr> 
+            <!-- create button and assign value to each button -->
+            <!-- dis("1") will call function dis to display value -->
+            <td><input class="nbtn" type="button" value=" 1 " onclick="dis('1')"/> </td> 
+            <td><input class="nbtn" type="button" value=" 2 " onclick="dis('2')"/> </td> 
+            <td><input class="nbtn" type="button" value=" 3 " onclick="dis('3')"/> </td> 
+            <td><input class="obtn" type="button" value="  /  " onclick="dis('/')"/> </td> 
+         </tr> 
+         <tr> 
+            <td><input class="nbtn" type="button" value=" 4 " onclick="dis('4')"/> </td> 
+            <td><input class="nbtn" type="button" value=" 5 " onclick="dis('5')"/> </td> 
+            <td><input class="nbtn" type="button" value=" 6 " onclick="dis('6')"/> </td> 
+            <td><input class="obtn" type="button" value="  -  " onclick="dis('-')"/> </td> 
+         </tr> 
+         <tr> 
+            <td><input class="nbtn" type="button" value=" 7 " onclick="dis('7')"/> </td> 
+            <td><input class="nbtn" type="button" value=" 8 " onclick="dis('8')"/> </td> 
+            <td><input class="nbtn" type="button" value=" 9 " onclick="dis('9')"/> </td> 
+            <td><input class="obtn" type="button" value="  + " onclick="dis('+')"/> </td> 
+         </tr> 
+         <tr> 
+            <td><input class="obtn" type="button" value=" . " onclick="dis('.')"/> </td> 
+            <td><input class="nbtn" type="button" value=" 0 " onclick="dis('0')"/> </td> 
+            <td><input class="obtn" type="button" value="  =  " onclick="dis('=')"/> </td> 
+            <td><input class="obtn" type="button" value="  *  " onclick="dis('+')"/> </td> 
+         </tr> 
+      </table>
+
+
+
+
+
+<br>
+<h1>Canadian Taxes<h1>
+
+<input type="text" id="taxInput">
+<button type="button" onclick="  alert(calculateTax(document.getElementById('taxInput').value ))">Calculate Tax</button>
+
+
+<h2>Better tax Calculator</h2>
+<input id="inTaxv2" type="text" name="">
+<button id="btnTax">Calculate Tax</button>
+<div id="taxv2MsgDiv"></div>
+
+
+
+<h1>Working with arrays</h1>
+<input type="text" id="inputArea"><br>
+<br>
+ <!-- <button type="button" onclick="document.getElementById('inline').innerHTML = arrAdd(document.getElementById('inputArea').value)">Add</button> -->
+ <button type="button" onclick="  document.getElementById('messageArea').innerHTML = arrAdd(document.getElementById('inputArea').value )">Add</button>
+<button type="button" onclick="document.getElementById('messageArea').innerHTML = arrShow()">Show</button>
+<button type="button" onclick="document.getElementById('messageArea').innerHTML = arrTotal()">Total</button>
+<button type="button" onclick="arrClear(document.getElementById('messageArea').value)">Clear</button>
+<br>
+<p id="messageArea"></p>
+
+<br>
+
+<h1>Working with Dictionaries </h1>
+ <input type="text" id="inputArea2"><br>
+
+ <button type="button" onclick="  document.getElementById('messageArea2').innerHTML = provinceLookup(document.getElementById('inputArea2').value )">Lookup</button>
+<p id="messageArea2"></p>
+
+
+
+<script src="basic.js"></script>
+
+</body>
+
+
+</html>
