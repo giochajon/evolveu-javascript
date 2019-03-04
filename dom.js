@@ -55,7 +55,7 @@ switch (elemento.target.innerText )
 	{ 
 
 	case "Add Card": 
-3
+
 	var aCard = document.createElement("div");
     	// the single append will add to the end...
     	elemento.target.parentNode.append (createNewCard(aCard));
