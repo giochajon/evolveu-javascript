@@ -1,0 +1,33 @@
+
+body {
+
+
+background-color: #e1eef2;
+
+}
+
+.wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid black;
+    box-shadow: 3px 3px 5px 6px #ccc;
+    border-radius: 30px;
+    padding: 30px;
+    background: #42d1f4;
+    font-size: 20px;
+    width: 200px;
+
+    margin-bottom: 20px;
+
+}
+}
+
